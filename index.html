@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>MINE1FREM HOSTING</title> 
+  <link rel="stylesheet" href="style.css"> 
+  <script defer src="script.js"></script> 
+ <style type="text/css" id="dcoder_stylesheet">/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: cyan;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: cyan;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 200px 20px;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    animation: backgroundFade 5s infinite alternate;
+}
+
+@keyframes backgroundFade {
+    0% { filter: brightness(0.8); }
+    100% { filter: brightness(1); }
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: cyan;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: white;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.feature {
+    background: #111;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+    margin: 20px auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.feature h3 {
+    color: cyan;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px cyan; }
+    50% { box-shadow: 0 0 20px cyan; }
+    100% { box-shadow: 0 0 5px cyan; }
+}
+
+.fade-in { animation: fadeIn 2s ease-in-out; }
+.slide-in { animation: slideIn 2s ease-in-out; }
+.glow { animation: glow 1.5s infinite alternate; }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}</style></head> 
+ <body> <!-- Navigation Bar --> 
+  <header> 
+   <nav> 
+    <div class="logo">
+      MINE1FREM HOSTING 
+    </div> 
+    <ul class="nav-links"> 
+     <li><a href="#">Home</a></li> 
+     <li><a href="folder/plans.html">Minecraft Hosting</a></li>
+     <li><a href="#">VPS Hosting</a></li> 
+     <li><a href="#">Discord Bot Hosting</a></li> 
+     <li><a href="#">Contact</a></li> 
+    </ul> <button class="toggle-menu">☰</button> 
+   </nav> 
+  </header> <!-- Hero Section --> 
+  <section class="hero"> 
+   <h1 class="fade-in">Premium Hosting Solutions</h1> 
+   <p class="slide-in">Experience high-performance servers with top-tier security and support.</p> <a href="#" class="cta-button glow">Get Started</a> 
+  </section> <!-- About Section --> 
+  <section class="about"> 
+   <h2 class="fade-in">Why Choose MINE1FREM HOSTING?</h2> 
+   <p class="slide-in">We provide ultra-fast and reliable hosting services, backed by enterprise-grade hardware.</p> 
+  </section> <!-- Features Section --> 
+  <section class="features"> 
+   <div class="feature fade-in"> 
+    <img src="image1.png" alt="High Performance"> 
+    <h3>High Performance</h3> 
+    <p>Our servers use the latest hardware to ensure smooth gameplay.</p> 
+   </div> 
+   <div class="feature fade-in"> 
+    <img src="image2.png" alt="DDoS Protection"> 
+    <h3>DDoS Protection</h3> 
+    <p>We offer advanced security to keep your server online 24/7.</p> 
+   </div> 
+   <div class="feature fade-in"> 
+    <img src="image3.png" alt="24/7 Support"> 
+    <h3>24/7 Support</h3> 
+    <p>Our team is always available to assist you with any issues.</p> 
+   </div> 
+  </section> <!-- Footer --> 
+  <footer> 
+   <p>© 2025 MINE1FREM HOSTING. All Rights Reserved.</p> 
+  </footer> 
+ 
+<script type="text/javascript" id="dcoder_script">// Mobile Navigation Toggle
+document.querySelector(".toggle-menu").addEventListener("click", function () {
+    document.querySelector(".nav-links").classList.toggle("active");
+});</script></body></html>
